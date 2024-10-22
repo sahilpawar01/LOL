@@ -1,1 +1,276 @@
-hsh
+Problem Statement: - 1
+Design and Develop SQL DDL statements which demonstrate the use of SQL objects such as Table, 
+View, Index, Sequence, Synonym.
+PEOs ,POs, PSOs and COs satisfied
+PEOs : 1 POs : 1,2,5 PSOs : 1 COs :1
+Consider the following database where the primary keys are underlined. Create the 
+following tables in oracle/MySQL
+1)
+Person (driver_id, name, address)
+Car (license, model, year)
+Accident (report_no, date_acc, location)
+Owns (driver_id, license)
+Participated (driver_id, model, report_no, damage_amount)
+2)
+Employee (employee_name,street, city)
+Works (employee_name,company_name,salary)
+Company (company_name,city)
+Manages (employee_name,manager_name)
+1) Create view with the employee_name, company_name by using above tables.
+2) Create index for employee & participated table.
+3) Create sequence for person & insert 4 records using sequence.
+4) Create the synonym for table participated & company. Display the record using this 
+table. Update the record using the synonym tables.
+
+
+
+
+Problem Statement: - 02
+Design at least 10 SQL queries for suitable database application using SQL DML statements: 
+Insert, Select, Update, Delete with operators, functions, and set operator. 
+PEOs ,POs, PSOs and COs satisfied
+PEOs : 1 POs : 1,2,5 PSOs : 1 COs :1
+Note : Use Primary key, foreign keys, unique, not null, null constraints whenever 
+necessary.
+Create table Department & Insert the following records by using any one method
+Deptno Dname Location
+10 Accounting Mumbai 
+20 Research Pune 
+30 Sales Nashik 
+40 Operations Nagpur 
+Create table employee as shown below.
+Empno Ename Job Mgr Joined_date Salary Commission Deptno Address 
+1001 Nilesh joshi Clerk 1005 17-dec-95 2800 600 20 Nashik 
+1002 Avinash pawar Salesma
+n
+1003 20-feb-96 5000 1200 30 Nagpur 
+1003 Amit kumar Manager 1004 2-apr-86 2000 ---- 30 Pune 
+1004 Nitin kulkarni Presiden
+t 
+-- 19-apr-86 50000 ---- 10 Mumbai 
+1005 Niraj Sharma Analyst 1003 3-dec-98 12000 ---- 20 Satara 
+1006 Pushkar 
+deshpande 
+Salesma
+n 
+1003 1-sep-96 6500 1500 30 Pune 
+1007 Sumit patil Manager 1004 1-may-91 25000 ---- 20 Mumbai
+1008 Ravi sawant Analyst 1007 17-nov-95 10000 ---- --- Amaravati 
+1) Write a query to display employee information. Write a name of column explicitly.
+2) Create a query to display unique jobs from the table.
+3) Change the location of dept 40 to Banglore instead of Nagpur.
+4) Change the name of the employees 1003 to Nikhil Gosavi.
+5) Delete Pushkar deshpande from employee table.
+6) Display all those employees whose job title is either ‘manager’ or ‘analyst’(write by 
+using OR & IN operator).
+7) Display the employee name & department number of all employees in dept 10,20,30 
+& 40.
+8) Find all names & joined date of employees whose names starts with ‘A’.
+9) Find all names of employees having ‘i’ as a second letter in their names.
+10) Find the department number, maximum salary where the maximum salary is 
+greater than 5000.
+
+
+
+
+
+Problem Statement: - 03
+Design at least 10 SQL queries for suitable database application using SQL DML statements: all 
+types of Join, Sub-Query and View
+ 
+ PEOs ,POs, PSOs and COs satisfied
+PEOs : 1 POs : 1,2,5 PSOs : 1 COs :1
+ Note : Use Primary key, foreign keys, unique, not null, null constraints whenever necessary. 
+Design the employee database with all constraints. Construct the following SQL queries for this 
+relational database.
+Employee(employee_name,street,city)
+Works(employee_name,company_name,salary)
+Company(company_name,city)
+Manages(employee_name,manager_name)
+1. Find the names of employees who work for First Bank Coorporation.
+2. . Find the names and cities of residence of all employees who work for First Bank Coorporation 
+3. Find the names, street addresses, and cities of residence of all employees who work for First Bank 
+Coorporation and earn more than $10000. 
+4. Find all employees in the database who earn more than each employee of Small Bank 
+Coorporation
+5. Find all employees who earn more than the average salary of all employees of their companies.
+6. Find the company that has the smallest payroll.
+7. Find those companies whose employees earn a higher salary, on average, than the average salary at 
+First Bank Coorporation. 
+8. Give all employees of First Bank Coorporation” a 10% raise
+9. Insert the names and salaries of employees who earn more than the average salary into a new table 
+called HighEarners
+10. Delete employees from the Employee table who work for a company in the Company table that 
+is located in Gotham.
+
+
+
+
+
+Problem Statement: - 04
+Unnamed PL/SQL code block: Use of Control structure and Exception handling is mandatory.
+PEOs ,POs, PSOs and COs satisfied
+PEOs : 1 POs : 1,2,5 PSOs : 1 COs :1
+Write a PL/SQL block of code for the following requirements:-
+Schema:
+1. Borrower(Rollin, Name, DateofIssue, NameofBook, Status)
+2. Fine(Roll_no,Date,Amt)
+1. Accept roll_no & name of book from user.
+2. Check the number of days (from date of issue), if days are between 15 to 30 then fine
+amount will be Rs 5per day.
+3.If no. of days>30, per day fine will be Rs 50 per day & for days less than 30, Rs. 5 per
+day.
+4.After submitting the book, status will change from I to R.
+5.If condition of fine is true, then details will be stored into fine table.
+Frame the problem statement for writing PL/SQL block inline with above statement
+
+
+
+Problem Statement: - 05
+Cursors: (All types: Implicit, Explicit, Cursor FOR Loop, Parameterized Cursor) 
+PEOs ,POs, PSOs and COs satisfied
+PEOs : 1 POs : 1,2,5 PSOs : 1 COs :1
+Write a PL/SQL block of code using parameterized Cursor, that will 
+1. merge the data available in the newly created table N_RollCall with the data available 
+in the table O_RollCall. 
+2. If the data in the first table already exist in the second table then that data should be 
+skipped. 
+3. Frame the separate problem statement for writing PL/SQL block to implement all
+
+
+
+Problem Statement: - 06
+PEOs ,POs, PSOs and COs satisfied
+PEOs : 1 POs : 1,2,5 PSOs : 1 COs :1
+Write a Stored Procedure namely proc_Grade for the categorization of student. 
+ If marks scored by students in examination is  <=1500 and marks>=990 
+then student will be placed in Distinction category
+ if marks scored are between 989 and 900 category is First Class, 
+ if marks 899 and 825 category is Higher Second Class. 
+Write a PL/SQL block for using procedure created with above requirement. 
+1. Stud_Marks (Roll, Name, Total_marks) 
+2. Result (Roll, Name, Class)
+Frame the separate problem statement for writing PL/SQL Stored Procedure and function, 
+inline with above statement.
+
+
+
+Problem Statement: - 07
+Database Trigger (All Types: Row level and Statement level triggers, Before and 
+After Triggers). 
+PEOs ,POs, PSOs and COs satisfied
+PEOs : 1 POs :3,4,5 PSOs : 1 COs :2
+ Write a database trigger on Library table. 
+ The System should keep track of the records that are being updated or deleted. 
+ The old value of updated or deleted records should be added in Library_ Audit table.
+Frame the problem statement for writing Database Triggers of all types, in-line with above 
+statement.
+
+
+
+Problem Statement: - 08
+Design and Develop MongoDB Queries using CRUD operations. (Use CRUD 
+operations, SAVE method, logical operators)
+PEOs ,POs, PSOs and COs satisfied
+PEOs : 2 POs : 1,3,4,5 PSOs : 2 COs :2
+1. Create database Employee.
+2. Create collection emp1 using createCollection method.
+3. Insert 4 to 5 documents in emp1 collection.(eno,ename,address,sal)
+4. display all documents.
+5. Insert document by creating own object id.
+6. Display all employess having salary greater than 5000
+7. Display all employess having salary less than 15000
+8. Display all employess having salary greater than 10000 and less than 20000.
+9. update sal of all employee with 10%
+10.Delete employee having salary less than 5000.
+11.Rename collection emp1 with employee1.
+12.Display employee whose name start with n.
+13.sort name in ascending order.
+
+
+
+Problem Statement: - 09
+Implement aggregation and indexing with suitable example using MongoDB.
+PEOs ,POs, PSOs and COs satisfied
+PEOs : 2 POs : 1,3,4,5 PSOs : 2 COs :2
+Create Below Collections:-
+ Books (book_id, book_title, author_name, publish_year)
+ Products (product_id, name, price)
+1. Create an index on the price field in a collection called Products to speed up queries 
+that filter by price.
+2. Create a compound index on author_name and publish_year in a collection called 
+Books.
+3. View all indexes created in a collection called Book & Product Separately?
+4. Drop the index created on the price field from the products collection.
+5. Find the total number of books published by each author in a collection called 
+books.
+6. Write an aggregation query that calculates the average price of all products from the 
+Products collection.
+7. Find the maximum and minimum price in the Products collection?
+8. Write an aggregation query to count the number of documents in the books 
+collection where the publish_year is greater than 2015.
+9. Use the $project stage to display only the book_title and author_name fields from 
+the books collection.
+10.Sorts documents based on one or more fields of Books Collection.
+
+
+Problem Statement: - 10
+Implement Map reduces operation with suitable example using MongoDB
+PEOs ,POs, PSOs and COs satisfied
+PEOs : 2 POs : 1,3,4,5 PSOs : 2 COs :2
+Consider the following document structure that stores book details author wise. 
+The document stores book_title, author_name, status (active /passive), and publish_year of 
+book
+Now, use the mapReduce function 
+ To select all the active books, Group them together on the basis of author_name
+ Then count the number of books by each author by using the following code in 
+MongoDB.
+ Store the result in a new collection called 'active_books_count'
+
+
+
+Problem Statement: - 11
+Design and Implement 10 query using MongoDB
+PEOs ,POs, PSOs and COs satisfied
+PEOs : 2 POs : 1,3,4,5 PSOs : 2 COs :2
+ 1.Create Database Restaurants.
+ 2.Create Collection REST1
+ 3.Insert documents
+ { restaurant_id, name, address { building, street, city, zipcode}, cuisine_type, score }
+4. Write a MongoDB query to display all the documents in the collection restaurants 
+5. Write a MongoDB query to display the fields restaurant_id, name, city,zipcode, but 
+exclude the field _id for all the documents in the collection REST1
+6. Write a MongoDB query to find the restaurants that achieved a score, more than 80 
+but less than 100 
+ 
+7. Update the score of the restaurant with restaurant_id 3001 to 90
+8. Update the cuisine type of all Indian restaurants to Indian_Zatka
+9. Delete the restaurant with restaurant_id 3003:
+10. Delete all restaurants with a score less than 85
+
+
+
+Problem Statement: - 12
+Design and Implement 10 query using MongoDB
+PEOs ,POs, PSOs and COs satisfied
+PEOs : 2 POs : 1,3,4,5 PSOs : 2 COs :2
+Create Student Collection with following keys 
+ student_id: Unique identifier for each student.
+ name: Name of the student.
+ age: Age of the student.
+ gender: Gender of the student (e.g., Male, Female).
+ marks: A sub-document containing the marks of the student in different 
+subjects:
+ marks.math: Marks obtained in Mathematics.
+ marks.science: Marks obtained in Science.
+ marks.english: Marks obtained in English.
+1. Find all students who are male.
+2. Find students who scored more than 90 in math.
+3. Find students aged 20 and above.
+4. Find students whose English marks are between 80 and 90.
+5. Count the number of female students.
+6. Find the student with the highest science score.
+7. Update Bob’s math score to 75.
+8. Delete all students who scored below 70 in math.
+9. Use aggregation to find the average marks in science for all students.
+10.Find the number of students with marks greater than 80 in any subject.
