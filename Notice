@@ -1,0 +1,15 @@
+SQL> alter session set "_oracle_script"=true;
+
+Session altered.
+SQL> create user Assignment_04 identified by Assignment_04;
+
+User created.
+
+SQL> grant all privileges to  Assignment_04;
+
+Grant succeeded.
+
+SQL> conn
+Enter user-name: Assignment_04
+Enter password:
+Connected.
