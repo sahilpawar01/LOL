@@ -79,4 +79,28 @@ COMMIT;
 
 SELECT * FROM Library_Audit;
 
+Update Operation
+sql
+Copy code
+UPDATE Library 
+SET Title = 'The Great Gatsby (Revised)' 
+WHERE Book_ID = 'B001';
+Delete Operation
+sql
+Copy code
+DELETE FROM Library 
+WHERE Book_ID = 'B002';
+Step 5: Check the Library_Audit Table
+After performing the update and delete operations, check the contents of the Library_Audit table to see if the triggers have logged the operations correctly:
+
+sql
+Copy code
+SELECT * FROM Library_Audit;
+Step 6: Enable Output for Statement-Level Triggers
+If you want to see the output messages from the statement-level triggers, enable output in your SQL*Plus session:
+
+sql
+Copy code
+SET SERVEROUTPUT ON;
+
 
