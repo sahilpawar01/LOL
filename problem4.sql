@@ -30,6 +30,8 @@ COMMIT;
 
 SET SERVEROUTPUT ON;
 
+do this if pl.sql is saved iin ur pc -------       @ "C:\Riot Games\pl.sql"
+
 
 
 
