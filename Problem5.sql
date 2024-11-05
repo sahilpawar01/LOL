@@ -16,6 +16,25 @@ CREATE TABLE O_RollCall (
     PRIMARY KEY (Roll_no, Date_of_Attendance)
 );
 
+
+-- Insert data into N_RollCall
+INSERT INTO N_RollCall (Roll_no, Name, Date_of_Attendance, Status)
+VALUES ('101', 'Alice', TO_DATE('2024-11-01', 'YYYY-MM-DD'), 'P');
+
+INSERT INTO N_RollCall (Roll_no, Name, Date_of_Attendance, Status)
+VALUES ('102', 'Bob', TO_DATE('2024-11-02', 'YYYY-MM-DD'), 'A');
+
+INSERT INTO N_RollCall (Roll_no, Name, Date_of_Attendance, Status)
+VALUES ('103', 'Charlie', TO_DATE('2024-11-01', 'YYYY-MM-DD'), 'P');
+
+-- Insert data into O_RollCall
+INSERT INTO O_RollCall (Roll_no, Name, Date_of_Attendance, Status)
+VALUES ('101', 'Alice', TO_DATE('2024-11-01', 'YYYY-MM-DD'), 'P');
+
+INSERT INTO O_RollCall (Roll_no, Name, Date_of_Attendance, Status)
+VALUES ('104', 'David', TO_DATE('2024-11-03', 'YYYY-MM-DD'), 'P');
+
+
 -- PL/SQL block to merge data from N_RollCall to O_RollCall
 DECLARE
     CURSOR c_N_RollCall IS
