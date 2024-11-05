@@ -45,15 +45,38 @@ INSERT INTO Department (Deptno, Dname, Location) VALUES
 (30, 'Sales', 'Nashik'),
 (40, 'Operations', 'Nagpur');
 
+-- Insert Employee 1
 INSERT INTO Employee (Empno, Ename, Job, Mgr, Joined_date, Salary, Commission, Deptno, Address) VALUES
-(1001, 'Nilesh Joshi', 'Clerk', 1005, TO_DATE('17-DEC-95', 'DD-MON-YY'), 2800, 600, 20, 'Nashik'),
-(1002, 'Avinash Pawar', 'Salesman', 1003, TO_DATE('20-FEB-86', 'DD-MON-YY'), 5000, 1200, 30, 'Nagpur'),
-(1003, 'Amit Kumar', 'Manager', 1004, TO_DATE('02-APR-86', 'DD-MON-YY'), 20000, NULL, 30, 'Pune'),
-(1004, 'Nitin Kulkarni', 'President', NULL, TO_DATE('19-DEC-86', 'DD-MON-YY'), 50000, NULL, 10, 'Mumbai'),
-(1005, 'Niraj Sharma', 'Analyst', 1003, TO_DATE('03-DEC-98', 'DD-MON-YY'), 12000, NULL, 20, 'Satara'),
-(1006, 'Pushkar Deshpande', 'Salesman', 1003, TO_DATE('01-SEP-96', 'DD-MON-YY'), 6500, 1500, 30, 'Pune'),
-(1007, 'Sumit Patil', 'Manager', 1004, TO_DATE('01-MAY-91', 'DD-MON-YY'), 25000, NULL, 20, 'Mumbai'),
+(1001, 'Nilesh Joshi', 'Clerk', 1005, TO_DATE('17-DEC-95', 'DD-MON-YY'), 2800, 600, 20, 'Nashik');
+
+-- Insert Employee 2
+INSERT INTO Employee (Empno, Ename, Job, Mgr, Joined_date, Salary, Commission, Deptno, Address) VALUES
+(1002, 'Avinash Pawar', 'Salesman', 1003, TO_DATE('20-FEB-86', 'DD-MON-YY'), 5000, 1200, 30, 'Nagpur');
+
+-- Insert Employee 3
+INSERT INTO Employee (Empno, Ename, Job, Mgr, Joined_date, Salary, Commission, Deptno, Address) VALUES
+(1003, 'Amit Kumar', 'Manager', 1004, TO_DATE('02-APR-86', 'DD-MON-YY'), 20000, NULL, 30, 'Pune');
+
+-- Insert Employee 4
+INSERT INTO Employee (Empno, Ename, Job, Mgr, Joined_date, Salary, Commission, Deptno, Address) VALUES
+(1004, 'Nitin Kulkarni', 'President', NULL, TO_DATE('19-DEC-86', 'DD-MON-YY'), 50000, NULL, 10, 'Mumbai');
+
+-- Insert Employee 5
+INSERT INTO Employee (Empno, Ename, Job, Mgr, Joined_date, Salary, Commission, Deptno, Address) VALUES
+(1005, 'Niraj Sharma', 'Analyst', 1003, TO_DATE('03-DEC-98', 'DD-MON-YY'), 12000, NULL, 20, 'Satara');
+
+-- Insert Employee 6
+INSERT INTO Employee (Empno, Ename, Job, Mgr, Joined_date, Salary, Commission, Deptno, Address) VALUES
+(1006, 'Pushkar Deshpande', 'Salesman', 1003, TO_DATE('01-SEP-96', 'DD-MON-YY'), 6500, 1500, 30, 'Pune');
+
+-- Insert Employee 7
+INSERT INTO Employee (Empno, Ename, Job, Mgr, Joined_date, Salary, Commission, Deptno, Address) VALUES
+(1007, 'Sumit Patil', 'Manager', 1004, TO_DATE('01-MAY-91', 'DD-MON-YY'), 25000, NULL, 20, 'Mumbai');
+
+-- Insert Employee 8
+INSERT INTO Employee (Empno, Ename, Job, Mgr, Joined_date, Salary, Commission, Deptno, Address) VALUES
 (1008, 'Ravi Sawant', 'Analyst', 1007, TO_DATE('17-NOV-95', 'DD-MON-YY'), 10000, NULL, NULL, 'Amaravati');
+
 
 
 
