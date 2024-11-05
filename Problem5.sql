@@ -60,3 +60,8 @@ BEGIN
     CLOSE c_N_RollCall;
 END;
 /
+
+
+
+for ans the code 
+SELECT * FROM O_RollCall;
