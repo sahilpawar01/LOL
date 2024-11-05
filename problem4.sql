@@ -83,3 +83,7 @@ EXCEPTION
         DBMS_OUTPUT.PUT_LINE('An error occurred: ' || SQLERRM);
 END;
 /
+
+last mein ye karre
+SELECT * FROM Result;
+
