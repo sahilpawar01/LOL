@@ -1,4 +1,3 @@
-PL SQL
 -- Create the Borrower table
 CREATE TABLE Borrower (
     Rollin VARCHAR(10),
@@ -12,9 +11,9 @@ CREATE TABLE Borrower (
 -- Create the Fine table
 CREATE TABLE Fine (
     Roll_no VARCHAR(10),
-    Date DATE,
-    Amt DECIMAL(10, 2),
-    PRIMARY KEY (Roll_no, Date)
+    Fine_Date DATE,  -- Renamed to avoid reserved word conflict
+    Amt NUMBER(10, 2),
+    PRIMARY KEY (Roll_no, Fine_Date)
 );
 
 -- PL/SQL block for the given requirements
@@ -23,7 +22,7 @@ DECLARE
     v_nameofbook VARCHAR(100);
     v_dateofissue DATE;
     v_days NUMBER;
-    v_fine_amt DECIMAL(10, 2);
+    v_fine_amt NUMBER(10, 2);  -- Changed to NUMBER data type
 BEGIN
     -- Accept roll_no and name of book from user
     v_roll_no := '&roll_no';
@@ -53,7 +52,7 @@ BEGIN
 
     -- Insert fine details if applicable
     IF v_fine_amt > 0 THEN
-        INSERT INTO Fine (Roll_no, Date, Amt)
+        INSERT INTO Fine (Roll_no, Fine_Date, Amt)
         VALUES (v_roll_no, SYSDATE, v_fine_amt);
     END IF;
 
