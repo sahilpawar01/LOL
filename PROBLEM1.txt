@@ -73,67 +73,59 @@ CREATE TABLE Manages (
 
 -- Step 2: Insert Sample Data
 -- Insert data into the Person table
-INSERT INTO Person (driver_id, name, address) VALUES
-(1, 'John Doe', '123 Elm St'),
-(2, 'Jane Smith', '456 Oak St'),
-(3, 'Alice Johnson', '789 Pine St'),
-(4, 'Bob Brown', '101 Maple St');
+-- Insert data into the Person table
+INSERT INTO Person (driver_id, name, address) VALUES (1, 'John Doe', '123 Elm St');
+INSERT INTO Person (driver_id, name, address) VALUES (2, 'Jane Smith', '456 Oak St');
+INSERT INTO Person (driver_id, name, address) VALUES (3, 'Alice Johnson', '789 Pine St');
+INSERT INTO Person (driver_id, name, address) VALUES (4, 'Bob Brown', '101 Maple St');
 
 -- Insert data into the Car table
-INSERT INTO Car (license, model, year) VALUES
-('ABC123', 'Toyota Camry', 2020),
-('XYZ789', 'Honda Accord', 2019),
-('LMN456', 'Ford Focus', 2018),
-('DEF321', 'Chevrolet Malibu', 2021);
+INSERT INTO Car (license, model, year) VALUES ('ABC123', 'Toyota Camry', 2020);
+INSERT INTO Car (license, model, year) VALUES ('XYZ789', 'Honda Accord', 2019);
+INSERT INTO Car (license, model, year) VALUES ('LMN456', 'Ford Focus', 2018);
+INSERT INTO Car (license, model, year) VALUES ('DEF321', 'Chevrolet Malibu', 2021);
 
 -- Insert data into the Accident table
-INSERT INTO Accident (report_no, date_acc, location) VALUES
-(101, '2023-01-15', 'Main St'),
-(102, '2023-02-20', 'Broadway'),
-(103, '2023-03-10', '1st Ave'),
-(104, '2023-04-05', 'Park Blvd');
+INSERT INTO Accident (report_no, date_acc, location) VALUES (101, '2023-01-15', 'Main St');
+INSERT INTO Accident (report_no, date_acc, location) VALUES (102, '2023-02-20', 'Broadway');
+INSERT INTO Accident (report_no, date_acc, location) VALUES (103, '2023-03-10', '1st Ave');
+INSERT INTO Accident (report_no, date_acc, location) VALUES (104, '2023-04-05', 'Park Blvd');
 
 -- Insert data into the Owns table
-INSERT INTO Owns (driver_id, license) VALUES
-(1, 'ABC123'),
-(2, 'XYZ789'),
-(3, 'LMN456'),
-(4, 'DEF321');
+INSERT INTO Owns (driver_id, license) VALUES (1, 'ABC123');
+INSERT INTO Owns (driver_id, license) VALUES (2, 'XYZ789');
+INSERT INTO Owns (driver_id, license) VALUES (3, 'LMN456');
+INSERT INTO Owns (driver_id, license) VALUES (4, 'DEF321');
 
 -- Insert data into the Participated table
-INSERT INTO Participated (driver_id, model, report_no, damage_amount) VALUES
-(1, 'Toyota Camry', 101, 1500.00),
-(2, 'Honda Accord', 102, 2000.00),
-(3, 'Ford Focus', 103, 2500.00),
-(4, 'Chevrolet Malibu', 104, 3000.00);
+INSERT INTO Participated (driver_id, model, report_no, damage_amount) VALUES (1, 'Toyota Camry', 101, 1500.00);
+INSERT INTO Participated (driver_id, model, report_no, damage_amount) VALUES (2, 'Honda Accord', 102, 2000.00);
+INSERT INTO Participated (driver_id, model, report_no, damage_amount) VALUES (3, 'Ford Focus', 103, 2500.00);
+INSERT INTO Participated (driver_id, model, report_no, damage_amount) VALUES (4, 'Chevrolet Malibu', 104, 3000.00);
 
 -- Insert data into the Employee table
-INSERT INTO Employee (employee_name, street, city) VALUES
-('John Doe', '123 Elm St', 'New York'),
-('Jane Smith', '456 Oak St', 'Los Angeles'),
-('Alice Johnson', '789 Pine St', 'Chicago'),
-('Bob Brown', '101 Maple St', 'San Francisco');
+INSERT INTO Employee (employee_name, street, city) VALUES ('John Doe', '123 Elm St', 'New York');
+INSERT INTO Employee (employee_name, street, city) VALUES ('Jane Smith', '456 Oak St', 'Los Angeles');
+INSERT INTO Employee (employee_name, street, city) VALUES ('Alice Johnson', '789 Pine St', 'Chicago');
+INSERT INTO Employee (employee_name, street, city) VALUES ('Bob Brown', '101 Maple St', 'San Francisco');
 
 -- Insert data into the Works table
-INSERT INTO Works (employee_name, company_name, salary) VALUES
-('John Doe', 'TechCorp', 80000.00),
-('Jane Smith', 'HealthPlus', 90000.00),
-('Alice Johnson', 'FinServ', 85000.00),
-('Bob Brown', 'AutoInc', 75000.00);
+INSERT INTO Works (employee_name, company_name, salary) VALUES ('John Doe', 'TechCorp', 80000.00);
+INSERT INTO Works (employee_name, company_name, salary) VALUES ('Jane Smith', 'HealthPlus', 90000.00);
+INSERT INTO Works (employee_name, company_name, salary) VALUES ('Alice Johnson', 'FinServ', 85000.00);
+INSERT INTO Works (employee_name, company_name, salary) VALUES ('Bob Brown', 'AutoInc', 75000.00);
 
 -- Insert data into the Company table
-INSERT INTO Company (company_name, city) VALUES
-('TechCorp', 'New York'),
-('HealthPlus', 'Los Angeles'),
-('FinServ', 'Chicago'),
-('AutoInc', 'San Francisco');
+INSERT INTO Company (company_name, city) VALUES ('TechCorp', 'New York');
+INSERT INTO Company (company_name, city) VALUES ('HealthPlus', 'Los Angeles');
+INSERT INTO Company (company_name, city) VALUES ('FinServ', 'Chicago');
+INSERT INTO Company (company_name, city) VALUES ('AutoInc', 'San Francisco');
 
 -- Insert data into the Manages table
-INSERT INTO Manages (employee_name, manager_name) VALUES
-('John Doe', 'Alice Johnson'),
-('Jane Smith', 'Bob Brown'),
-('Alice Johnson', 'Jane Smith'),
-('Bob Brown', 'John Doe');
+INSERT INTO Manages (employee_name, manager_name) VALUES ('John Doe', 'Alice Johnson');
+INSERT INTO Manages (employee_name, manager_name) VALUES ('Jane Smith', 'Bob Brown');
+INSERT INTO Manages (employee_name, manager_name) VALUES ('Alice Johnson', 'Jane Smith');
+INSERT INTO Manages (employee_name, manager_name) VALUES ('Bob Brown', 'John Doe');
 
 
 
