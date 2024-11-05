@@ -35,6 +35,8 @@ INSERT INTO O_RollCall (Roll_no, Name, Date_of_Attendance, Status)
 VALUES ('104', 'David', TO_DATE('2024-11-03', 'YYYY-MM-DD'), 'P');
 
 
+SET SERVEROUTPUT ON;
+
 -- PL/SQL block to merge data from N_RollCall to O_RollCall
 DECLARE
     CURSOR c_N_RollCall IS
