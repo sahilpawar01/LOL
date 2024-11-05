@@ -16,6 +16,23 @@ CREATE TABLE Fine (
     PRIMARY KEY (Roll_no, Fine_Date)
 );
 
+-- Insert sample data into Borrower table
+INSERT INTO Borrower (Rollin, Name, DateofIssue, NameofBook, Status)
+VALUES ('1001', 'John Doe', TO_DATE('2023-08-01', 'YYYY-MM-DD'), 'Database Systems', 'I');
+
+INSERT INTO Borrower (Rollin, Name, DateofIssue, NameofBook, Status)
+VALUES ('1002', 'Jane Smith', TO_DATE('2023-09-15', 'YYYY-MM-DD'), 'Computer Networks', 'I');
+
+INSERT INTO Borrower (Rollin, Name, DateofIssue, NameofBook, Status)
+VALUES ('1003', 'Alice Johnson', TO_DATE('2023-10-05', 'YYYY-MM-DD'), 'Operating Systems', 'I');
+
+COMMIT;
+
+SET SERVEROUTPUT ON;
+
+
+
+
 -- PL/SQL block for the given requirements
 DECLARE
     v_roll_no VARCHAR(10);
