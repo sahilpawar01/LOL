@@ -14,6 +14,13 @@ CREATE TABLE Result (
     PRIMARY KEY (Roll)
 );
 
+-- Insert data into Stud_Marks
+INSERT INTO Stud_Marks (Roll, Name, Total_marks) VALUES ('101', 'Alice', 1450);
+INSERT INTO Stud_Marks (Roll, Name, Total_marks) VALUES ('102', 'Bob', 920);
+INSERT INTO Stud_Marks (Roll, Name, Total_marks) VALUES ('103', 'Charlie', 850);
+INSERT INTO Stud_Marks (Roll, Name, Total_marks) VALUES ('104', 'David', 800);
+INSERT INTO Stud_Marks (Roll, Name, Total_marks) VALUES ('105', 'Eve', 1000);
+
 -- PL/SQL stored procedure to categorize students based on their marks
 CREATE OR REPLACE PROCEDURE proc_Grade (
     p_Roll IN Stud_Marks.Roll%TYPE,
