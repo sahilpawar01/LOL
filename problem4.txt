@@ -52,7 +52,7 @@ BEGIN
     FROM Borrower
     WHERE Rollin = v_roll_no AND NameofBook = v_nameofbook;
 
-    -- Calculate the number of days
+    
     v_days := TRUNC(SYSDATE - v_dateofissue);
 
     
