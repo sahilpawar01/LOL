@@ -41,13 +41,13 @@ DECLARE
     v_nameofbook VARCHAR(100);
     v_dateofissue DATE;
     v_days NUMBER;
-    v_fine_amt NUMBER(10, 2);  -- Changed to NUMBER data type
+    v_fine_amt NUMBER(10, 2); 
 BEGIN
-    -- Accept roll_no and name of book from user
+   
     v_roll_no := '&roll_no';
     v_nameofbook := '&nameofbook';
 
-    -- Fetch the date of issue
+   
     SELECT DateofIssue INTO v_dateofissue
     FROM Borrower
     WHERE Rollin = v_roll_no AND NameofBook = v_nameofbook;
@@ -55,7 +55,7 @@ BEGIN
     -- Calculate the number of days
     v_days := TRUNC(SYSDATE - v_dateofissue);
 
-    -- Calculate fine amount
+    
     IF v_days > 30 THEN
         v_fine_amt := (v_days - 30) * 50 + 30 * 5;
     ELSIF v_days > 15 THEN
@@ -64,12 +64,12 @@ BEGIN
         v_fine_amt := 0;
     END IF;
 
-    -- Update the status of the book
+   
     UPDATE Borrower
     SET Status = 'R'
     WHERE Rollin = v_roll_no AND NameofBook = v_nameofbook;
 
-    -- Insert fine details if applicable
+    
     IF v_fine_amt > 0 THEN
         INSERT INTO Fine (Roll_no, Fine_Date, Amt)
         VALUES (v_roll_no, SYSDATE, v_fine_amt);
