@@ -56,7 +56,7 @@ BEGIN
             VALUES (v_Roll_no, v_Name, v_Date_of_Attendance, v_Status);
         EXCEPTION
             WHEN DUP_VAL_ON_INDEX THEN
-                NULL; -- Skip if the record already exists
+                NULL; 
         END;
     END LOOP;
     CLOSE c_N_RollCall;
