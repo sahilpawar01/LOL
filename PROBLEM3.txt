@@ -30,27 +30,41 @@ CREATE TABLE Manages (
     FOREIGN KEY (employee_name) REFERENCES Employee(employee_name)
 );
 
--- Insert values into Employee table
-INSERT INTO Employee (employee_name, street, city) VALUES
-('John Doe', '123 Elm St', 'Springfield'),
-('Jane Smith', '456 Oak St', 'Shelbyville'),
-('Alice Johnson', '789 Pine St', 'Capital City');
+INSERT INTO Employee (employee_name, street, city) 
+VALUES ('John Doe', '123 Elm St', 'Springfield');
+
+INSERT INTO Employee (employee_name, street, city) 
+VALUES ('Jane Smith', '456 Oak St', 'Shelbyville');
+
+INSERT INTO Employee (employee_name, street, city) 
+VALUES ('Alice Johnson', '789 Pine St', 'Capital City');
+
 
 -- Insert values into Works table
-INSERT INTO Works (employee_name, company_name, salary) VALUES
-('John Doe', 'First Bank Corporation', 12000.00),
-('Jane Smith', 'First Bank Corporation', 11000.00),
-('Alice Johnson', 'Small Bank Corporation', 9000.00);
+INSERT INTO Works (employee_name, company_name, salary) 
+VALUES ('John Doe', 'First Bank Corporation', 12000.00);
+
+INSERT INTO Works (employee_name, company_name, salary) 
+VALUES ('Jane Smith', 'First Bank Corporation', 11000.00);
+
+INSERT INTO Works (employee_name, company_name, salary) 
+VALUES ('Alice Johnson', 'Small Bank Corporation', 9000.00);
 
 -- Insert values into Company table
-INSERT INTO Company (company_name, city) VALUES
-('First Bank Corporation', 'Springfield'),
-('Small Bank Corporation', 'Shelbyville');
+INSERT INTO Company (company_name, city) 
+VALUES ('First Bank Corporation', 'Springfield');
+
+INSERT INTO Company (company_name, city) 
+VALUES ('Small Bank Corporation', 'Shelbyville');
+
 
 -- Insert values into Manages table
-INSERT INTO Manages (employee_name, manager_name) VALUES
-('John Doe', 'Jane Smith'),
-('Alice Johnson', 'John Doe');
+INSERT INTO Manages (employee_name, manager_name) 
+VALUES ('John Doe', 'Jane Smith');
+
+INSERT INTO Manages (employee_name, manager_name) 
+VALUES ('Alice Johnson', 'John Doe');
+
 
 -- Perform operations
 -- 1. Find the names of employees who work for First Bank Corporation
