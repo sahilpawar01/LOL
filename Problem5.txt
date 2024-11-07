@@ -67,3 +67,42 @@ END;
 
 for ans the code 
 SELECT * FROM O_RollCall;
+
+
+
+
+
+extra not necessary
+SET SERVEROUTPUT ON;
+
+-- PL/SQL block to merge data from N_RollCall to O_RollCall with a parameterized cursor
+DECLARE
+    -- Parameterized cursor to select data from N_RollCall based on Status
+    CURSOR c_N_RollCall(p_Status CHAR) IS
+        SELECT Roll_no, Name, Date_of_Attendance, Status
+        FROM N_RollCall
+        WHERE Status = p_Status;
+    
+    v_Roll_no N_RollCall.Roll_no%TYPE;
+    v_Name N_RollCall.Name%TYPE;
+    v_Date_of_Attendance N_RollCall.Date_of_Attendance%TYPE;
+    v_Status N_RollCall.Status%TYPE;
+BEGIN
+    -- Open the cursor with the 'P' (Present) status
+    OPEN c_N_RollCall('P');
+    LOOP
+        FETCH c_N_RollCall INTO v_Roll_no, v_Name, v_Date_of_Attendance, v_Status;
+        EXIT WHEN c_N_RollCall%NOTFOUND;
+        BEGIN
+            -- Attempt to insert each row into O_RollCall
+            INSERT INTO O_RollCall (Roll_no, Name, Date_of_Attendance, Status)
+            VALUES (v_Roll_no, v_Name, v_Date_of_Attendance, v_Status);
+        EXCEPTION
+            -- If the record already exists, skip it
+            WHEN DUP_VAL_ON_INDEX THEN
+                NULL; 
+        END;
+    END LOOP;
+    CLOSE c_N_RollCall;
+END;
+/
